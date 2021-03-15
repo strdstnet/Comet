@@ -1,0 +1,23 @@
+{
+  "name": "@strdstnet/comet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/strdstnet/Comet.git",
+  "scripts": {
+    "start": "ts-node src/start.ts",
+    "build": "tsc && cp src/config.json lib/",
+    "test": "node lib/bot.js 192.168.0.179 5"
+  },
+  "dependencies": {
+    "@strdstnet/protocol": "1.201.6",
+    "@strdstnet/utils.binary": "^1.0.1",
+    "blessed": "^0.1.81"
+  },
+  "devDependencies": {
+    "@strdst/tsconfig": "^1.0.3",
+    "@types/blessed": "^0.1.17",
+    "@types/node": "^14.14.10",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  }
+}
